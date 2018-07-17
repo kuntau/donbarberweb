@@ -1,0 +1,35 @@
+<header class="site-header" role="banner">
+  <div class="nav-wrapper lang-bar">
+    <div class="container">
+      <div class="right-align">
+        <a href="{{ site.baseurl_root }}/"><img src="/assets/images/ms_my.gif" alt="Bahasa Malaysia"></a>
+        <a href="{{ site.baseurl_root }}/en"><img src="/assets/images/en_gb.gif" alt="English (UK)"></a>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <div class="nav-wrapper">
+
+      <div class="container">
+
+        <a class="brand-logo" href="/">
+          <img src="/assets/images/ccp_logo.png" alt="City Car Park Logo" height="50px">
+          <img src="/assets/images/logo/dewan-bandaraya-kuala-lumpur.png" alt="Dewan Bandaraya Kuala Lumpur" height="60px" style="padding-top: 5px">
+        </a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        <ul class="right hide-on-med-and-down">
+          {% include nav-main.html %}
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          {% include nav-main-mobile.html %}
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+</header>

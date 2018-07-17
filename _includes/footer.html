@@ -1,0 +1,40 @@
+<footer class="site-footer purple lighten-4">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col s6">
+        <p>
+          {% t global.footer_text1 %}<br />
+          <a href="#" onclick="event.preventDefault()">{{ site.cs_phone }}</a><br />
+          {% t global.footer_text2 %}<br />
+          <a href="mailto:{{ site.cs_email }}">{{ site.cs_email }}</a>
+        </p>
+      </div>
+
+      <div class="col s6">
+        <ul>
+          <li><a href="{% tl policies %}">{% t menu.policies %}</a></li>
+          <li><a href="{% tl rate %}">{% t menu.rate %}</a></li>
+          <li><a href="{% tl terms %}">{% t menu.t&c %}</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- <script src="https://code.jquery.com/jquery&#45;2.1.1.min.js"></script> -->
+<!-- <script src="https://unpkg.com/vue"></script> -->
+<script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+<script src="/assets/js/bin/materialize.min.js"></script>
+<script src="/assets/js/modal.js"></script>
+<script src="/assets/js/scripts.js"></script>
+{% capture rate %}{% tl rate %}{% endcapture %}
+{% if pageurl == rate %}
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/assets/js/search.js"></script>
+{% endif %}

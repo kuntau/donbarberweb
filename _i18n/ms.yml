@@ -1,0 +1,48 @@
+global:
+  welcome: Selamat Datang ke
+  partner: Rakan Kami
+  footer_text1: Untuk maklumat lanjut, hubungi <b>talian bantuan citycarpark</b>
+  footer_text2: atau e-mel ke Pusat Khidmat Pelanggan
+langs:
+  ms: Malay
+  en: English
+menu:
+  home: Utama
+  service: Perkhidmatan
+  product: Produk
+  operation: Operasi
+  contact: Hubungi
+  products:
+    cwt: CWT Terminal
+    app: Applikasi Telefon Pintar
+    season_pass: Pas Bulanan Digital
+    reserve_bay: Petak Khas
+    apply: Mohon
+  operations:
+    terminal: Terminal
+    season_pass: Pas Bulanan Digital
+    reserve_bay: Petak Khas
+    compound: Kompaun
+    rate: Kadar
+    map: Peta Operasi
+  policies: Polisi
+  rate: Kadar Parkir
+  t&c: Terma & Syarat
+text:
+  search: Carian lokasi
+  search_placeholder: Masukkan kata kunci lokasi carian anda
+  rate:
+    area: Kawasan
+    rate: Kadar Parkir (RM)
+    season_pass: Kadar Pas Bulanan
+    reserve_bay: Kadar Petak Khas
+image_path:
+  jomparking: /assets/images/product/flow_jomparking_ms.png
+  3step: /assets/images/product/3step_ms.png
+  season_pass: /assets/images/product/season_pass_ms.png
+  reserve_bay: /assets/images/product/reserve_bay_ms.png
+  barrier: /assets/images/product/barrier.png
+  coins: /assets/images/product/coins.png
+  tng: /assets/images/product/tng.png
+  google_play: /assets/images/google_play.png
+  apple_store: /assets/images/apple_store.png
