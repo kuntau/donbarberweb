@@ -1,35 +1,31 @@
-<header class="site-header" role="banner">
-  <div class="nav-wrapper lang-bar">
-    <div class="container">
-      <div class="right-align">
-        <a href="{{ site.baseurl_root }}/"><img src="/assets/images/ms_my.gif" alt="Bahasa Malaysia"></a>
-        <a href="{{ site.baseurl_root }}/en"><img src="/assets/images/en_gb.gif" alt="English (UK)"></a>
-      </div>
+<nav class="navbar is-fixed-top is-dark">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="http://donbarbershop.my">
+      <img src="http://donbarbershop.my/static/images/logo.png" alt="Don Barbershop" width="112" height="28">
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
 
-  <nav>
-    <div class="nav-wrapper">
-
-      <div class="container">
-
-        <a class="brand-logo" href="/">
-          <img src="/assets/images/ccp_logo.png" alt="City Car Park Logo" height="50px">
-          <img src="/assets/images/logo/dewan-bandaraya-kuala-lumpur.png" alt="Dewan Bandaraya Kuala Lumpur" height="60px" style="padding-top: 5px">
-        </a>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
-        <ul class="right hide-on-med-and-down">
-          {% include nav-main.html %}
-        </ul>
-
-        <ul id="nav-mobile" class="side-nav">
-          {% include nav-main-mobile.html %}
-        </ul>
-
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" href="mengenai-kami.html">Mengenai kami</a>
+      <a class="navbar-item" href="perkhidmatan.html">Perkhidmatan</a>
+      <a class="navbar-item" href="produk.html">Produk</a>
+      <a class="navbar-item" href="don-varsity.html">Don Varsity</a>
+      <a class="navbar-item" href="hubungi-kami.html">Hubungi kami</a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="/documentation/overview/start/"> Docs </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="/documentation/overview/start/"> Overview </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/"> Modifiers </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+        </div>
       </div>
-
     </div>
-  </nav>
-
-</header>
+  </div>
+</nav>

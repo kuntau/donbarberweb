@@ -13,21 +13,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: City Car Park
-email: cs@citycarpark.my
+title: Don Barbershop
+email: don@donbarbershop.my
 cs_email: cs@citycarpark.my
 cs_phone: +603 4162 8672
 description: > # this means to ignore newlines until "baseurl:"
   Citycarpark is a Parking Solution for all the parking problems in Kuala Lumpur.
 # permalink: /:title
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dbkl.citycarpark.my" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: citycarpark
-github_username:  citycarpark
+url: "http://donbarbershop.my" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: donbarbershopmy
+github_username:  donbarbershopmy
 google_analytics: UA-100178704-1
 
 # Multi languages support
-languages: [ "ms", "en" ]
+languages: ["en"]
 # languages: ["en", "ms"]
 exclude_from_localizations: [ "assets" ]
 
@@ -36,7 +36,7 @@ markdown: kramdown
 # theme: minima
 gems:
   - jekyll-feed
-  - jekyll-multiple-languages-plugin
+  # - jekyll-multiple-languages-plugin
 exclude:
   - Gemfile
   - Gemfile.lock

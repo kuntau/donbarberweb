@@ -1,0 +1,65 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8"
+
+// $roboto-font-path: "/assets/fonts/roboto/" !default
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+// Our variables
+$purple: #8A4D76
+$pink: #FA7C91
+$brown: #757763
+$beige-light: #D0D1CD
+$beige-lighter: #EFF0EB
+
+// Update Bulma's global variables
+$family-sans-serif: "Roboto", sans-serif
+$grey-dark: $brown
+$grey-light: $beige-light
+$primary: $purple
+$link: $pink
+$widescreen-enabled: false
+$fullhd-enabled: false
+
+// Update some of Bulma's component variables
+// $body-background-color: $beige-lighter;
+$control-border-width: 2px
+$input-border-color: transparent
+$input-shadow: none
+
+@import "bulma/utilities/functions"
+
+// Add your own colors, set new fonts, override Bulma styles
+// See also: https://buefy.github.io/#/documentation/customization
+@import "./variables"
+
+// kuntau
+$primary: #b18440
+$secondary: #181D23
+$link: $primary
+
+@import "bulma/utilities/initial-variables"
+@import "bulma/utilities/derived-variables"
+
+@import "bulma"
+
+// main sass code start here -->
+.navbar-brand
+    .navbar-item
+        img
+            height: 100px
+            width: auto
+            max-height: none
+            max-width: none
+            position: absolute
+            top: 0
+            left: 50px
+#hero 
+    background-image: url(http://donbarbershop.my/static/images/hero.jpg)
+    background-size: 1920px
+
+#testi-header
+    background-color: $secondary
+    .title
+        color: $grey-light
