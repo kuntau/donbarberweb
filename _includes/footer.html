@@ -1,25 +1,23 @@
 <footer class="footer is-secondary">
   <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Bulma</strong> by
-        <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
-        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
-    </div>
     <div class="columns">
       <div class="column">
-        <p>
-          {% t global.footer_text1 %}
-          <br />
-          <a href="#" onclick="event.preventDefault()">{{ site.cs_phone }}</a>
-          <br /> {% t global.footer_text2 %}
-          <br />
-          <a href="mailto:{{ site.cs_email }}">{{ site.cs_email }}</a>
-        </p>
+        <figure class="image is-256x256">
+          <img src="assets/images/logo.png" alt="">
+        </figure>
       </div>
-  
+      <div class="column">
+        <h3>SITE LINKS</h3>
+        <aside class="menu">
+          <!-- <p class="menu&#45;label">SITE LINKS</p> -->
+          <ul class="menu-list">
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">ABOUT US</a></li>
+          </ul>
+        </aside>
+      </div>
       <div class="column">
         <ul>
           <li> <a href="{% tl policies %}">{% t menu.policies %}</a> </li>
@@ -27,7 +25,17 @@
           <li> <a href="{% tl terms %}">{% t menu.t&c %}</a> </li>
         </ul>
       </div>
-  
+    </div>
+  </div>
+</footer>
+<footer class="footer footer-end">
+  <div class="container">
+    <div class="content">
+      <p>
+        Copyright &copy; <strong>Don Barbershop</strong>. Design by
+        <a href="https://niza.mudd.in">RAC Global</a>.
+        <span class="is-pulled-right">Privacy Policy</span>
+      </p>
     </div>
   </div>
 </footer>
