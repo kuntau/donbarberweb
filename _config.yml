@@ -20,7 +20,6 @@ cs_phone: +603 4162 8672
 description: > # this means to ignore newlines until "baseurl:"
   Citycarpark is a Parking Solution for all the parking problems in Kuala Lumpur.
 # permalink: /:title
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://donbarbershop.my" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: donbarbershopmy
 github_username:  donbarbershopmy
@@ -34,11 +33,19 @@ exclude_from_localizations: [ "assets" ]
 # Build settings
 markdown: kramdown
 # theme: minima
-gems:
+
+plugins:
   - jekyll-feed
   # - jekyll-multiple-languages-plugin
+
 exclude:
   - Gemfile
   - Gemfile.lock
+
 sass:
   style: compressed
+
+# DEV
+host: 0.0.0.0
+port: 4000
+baseurl: "" # the subpath of your site, e.g. /blog

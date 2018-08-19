@@ -39,8 +39,7 @@ $primary: #b18440
 $secondary: #181D23
 $link: $primary
 
-@import "bulma/utilities/initial-variables"
-@import "bulma/utilities/derived-variables"
+$dimensions: 16 24 32 48 64 96 128 256
 
 @import "bulma"
 
@@ -59,8 +58,11 @@ $link: $primary
     .navbar-item
         text-transform: uppercase
 #hero
-    background-image: url(images/hero.jpg)
-    background-size: 1920px
+    background: url(images/hero.jpg)
+    /* background-size: 1920px */
+
+#hero-small
+    background: url(images/hero.jpg)
 
 #testi-header, #social-header
     background-color: $secondary
@@ -68,12 +70,29 @@ $link: $primary
         color: $grey-light
         text-shadow: 1px 1px 2px #eee
 
+#service-header
+    background: url(images/bg/what-the-hex.png) repeat
+
+#testi-body
+    background: url(images/bg/tic-tac-toe.png) repeat
+
+#service-body
+    background: url(images/bg/what-the-hex-dark.png) repeat
+
+#social-body
+    background: url(images/bg/round.png) repeat
+
+.content
+    padding: 50px 0
+
 .is-secondary
     background-color: $secondary
 
 .footer
-    background-color: #333
+    background-color: $secondary
     padding-bottom: 2rem
 
 .footer-end
-    background-color: #333
+    background-color: #111
+
+// UTILITIES

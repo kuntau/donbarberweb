@@ -1,21 +1,21 @@
 <nav class="navbar is-fixed-top is-black">
   <div class="navbar-brand">
-    <a class="navbar-item" href="http://donbarbershop.my">
+    <a class="navbar-item" href="/">
       <img src="assets/images/logo.png" alt="Don Barbershop" width="112" height="28">
     </a>
-    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+    <div class="navbar-burger burger" data-target="navbarDonBarbershop">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </div>
 
-  <div id="navbarExampleTransparentExample" class="navbar-menu">
+  <div id="navbarDonBarbershop" class="navbar-menu">
     <div class="navbar-end">
-      <a class="navbar-item" href="mengenai-kami.html">About Us</a>
-      <a class="navbar-item" href="perkhidmatan.html">Services</a>
+      <a class="navbar-item" href="{% tl about %}">About Us</a>
+      <a class="navbar-item" href="{% tl service %}">Services</a>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="produk.html"> Products </a>
+        <a class="navbar-link" href="{% tl product %}"> Products </a>
         <div class="navbar-dropdown is-boxed">
           <a class="navbar-item" href="/documentation/overview/start/"> Overview </a>
           <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/"> Modifiers </a>
@@ -24,8 +24,8 @@
         </div>
       </div>
       <a class="navbar-item" href="don-varsity.html">Don Varsity</a>
-      <a class="navbar-item" href="barbiere.html">Barbiere</a>
-      <a class="navbar-item" href="hubungi-kami.html">Contact Us</a>
+      <a class="navbar-item" href="{% tl barbiere %}">Barbiere</a>
+      <a class="navbar-item" href="{% tl contact %}">Contact Us</a>
     </div>
   </div>
 </nav>
